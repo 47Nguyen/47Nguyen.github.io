@@ -1,0 +1,465 @@
+@keyframes slideInLeft{
+    from {
+        transform: translate(-300px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+@font-face {
+    font-family: "MemphisRiver";
+    src: url(Memphis-River/Memphis\ River.otf);
+}
+@font-face {
+    font-family: "AliceSmile";
+    src: url(AliceSmile/Alice\ Smile.ttf);
+}
+@font-face {
+    font-family: "Comic";
+    src: url(talk_comic/Talk\ Comic.ttf);
+}
+@font-face {
+    font-family: "Chicken";
+    src: url(chicken_pie/CHICKEN\ Pie.ttf);
+}
+
+body{
+    margin-left: 2% ;
+    margin-right: 2% ;
+    background-image: url("bground.jpg");
+}
+
+h1{
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Top{
+    margin-left: auto;
+    margin-right: auto;
+    height: 175px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    border-radius: 25px;
+    
+}
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Name{
+    width: 25%;
+    font-size: 40px;
+    font-family:'AliceSmile', sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+}
+.Name{
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    
+}
+.navbar{
+    width: 30%;
+     
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2%;
+}
+
+ul li {
+    list-style: none;
+    
+}
+ul li a{
+    height: 30px;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 1%;
+    background-color: black;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    background-color: black;
+    width: 85px;
+    height: 50px;
+}
+.books img{
+    width: 250px;
+}
+
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title a{
+    font-family: "Comic",sans-serif;
+    margin-top: 1%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: wheat;
+    border-radius: 100px;
+    height: 65px;
+    width: 275px;
+    text-decoration: none;
+}
+
+.highlight{
+    margin-top: 1%;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(shelf.jpg);
+}
+
+.overlay{
+    text-align: center;
+    display: none;
+    position: absolute;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(245, 35%, 19%, 0.8);
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.book1:hover .overlay{
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 450px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.book2:hover .overlay{
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 450px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book3:hover .overlay{
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 420px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book1{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book1 img{
+    width: 300px;
+}
+.book2{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book2 img{
+    width: 300px;
+}
+.book3{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book3 img{
+    width: 300px;
+}
+
+
+.featured{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.books{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book-name{
+    text-align: center;
+    margin-top: 3%;
+    width: 150px;
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+.book-name a{
+    color: black;
+}
+.book-name a:hover{
+    color: wheat;
+}
+
+
+.book-name:hover{
+    width: 180px;
+    background-color: black;
+    color: wheat;
+}
+
+
+.breadcrumb{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 0%, 0%,0.8);
+    border-radius: 100px;
+    width: 25%;
+    margin-top: 1%;
+
+}
+.breadrcrumnav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 7%;
+
+}
+
+.breadrcrumnav li{
+    color: wheat;
+    font-size: 26px;
+    font-weight: bold;
+}
+.breadrcrumnav li::after{
+    content: " > ";
+}
+.breadrcrumnav li:last-child::after{
+    content: "";
+}
+.breadrcrumnav a{
+    color: wheat;
+    font-weight: normal;
+    text-decoration: none;
+}
+.breadrcrumnav a:hover{
+    text-decoration: underline;
+}
+
+
+@media(max-width:920px){
+    .body{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .Top{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .Name{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rmit{
+        width: 75px;
+    }
+    
+    .navbar{
+        display: block;
+        width: 25%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 10px;
+        
+    }
+    .navigation{
+        float: right;
+    }
+    
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .navbar li{
+        margin-bottom: 5%;
+    }
+    .navbar li a{
+        font-size: 15px;
+    }
+   
+}
+@media(max-width:920px){
+    .breadcrumb{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: hsl(0, 0%, 0%,0.8);
+        border-radius: 100px;
+        width: 80%;
+        margin-top: 1%;
+    }
+    .breadrcrumnav{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-right: 15%;
+    
+    }
+    .breadrcrumnav li{
+        color: wheat;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+@media(max-width:920px){
+    .featured{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: space-evenly; 
+    }
+    
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title a{
+        margin-top: 1%;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        height: 40px;
+        width: 160px;
+        text-decoration: none;
+    }
+    .highlight{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url(shelf.jpg);
+    }
+    .books{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .book-name{
+        font-size: 10px;
+        text-align: center;
+        margin-top: 3%;
+        width: 100px;
+        border-radius: 25px;
+    }
+    .book-name:hover{
+        width: 100px;
+        background-color: black;
+        color: wheat;
+    }
+    .books img{
+        width: 100px;
+    }
+    .book1 img{
+        width: 110px;
+    }
+    .book2 img{
+        width: 110px;
+    }
+    .book3 img{
+        width: 110px;
+    }
+    .book1:hover .overlay{
+        font-size: 5px;
+        height: 169px;
+        width: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .book2:hover .overlay{
+        font-size: 5px;
+        height: 169px;
+        width: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .book3:hover .overlay{
+        font-size: 5px;
+        height: 169px;
+        width: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .overlay{
+        text-align: center;
+        position: absolute;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: hsl(245, 35%, 19%, 0.8);
+        letter-spacing: 2px;
+        line-height: 10px;
+    }
+    
+}
+
